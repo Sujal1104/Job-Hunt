@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/socialicons2"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.545" />
 
     <EditText
         android:id="@+id/EmailAddress"
@@ -50,7 +50,7 @@
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/socialicons2"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.76" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -72,7 +72,7 @@
         android:id="@+id/checkBox"
         android:layout_width="311dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="128dp"
         android:text=" I agree to the Freelancer User Agreement
         and Privacy Policy"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,19 +83,20 @@
     <Button
         android:id="@+id/button"
         android:layout_width="280dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_input2"
-        android:text="Continue"
+        android:text="Register"
         android:textAllCaps="false"
         android:textColor="#FBF8F8"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:onClick="NextActivity3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -124,17 +125,9 @@
             android:layout_width="90dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:src="@drawable/facebookre"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="612dp" />
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
             android:src="@drawable/download"
             tools:layout_editor_absoluteX="61dp"
             tools:layout_editor_absoluteY="612dp" />
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

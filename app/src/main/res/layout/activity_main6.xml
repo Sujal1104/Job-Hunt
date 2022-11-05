@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="197dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="16dp"
+            android:text="Profile Details"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:text="What Language do you speak?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="273dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="13dp"
+            android:text="We will use to help match you with employars who are fluent in these languages."
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="271dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.025"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"
+            android:text="Which location prefer to job?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.325"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="235dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Location"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.335"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"
+            android:text="When were you born?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="273dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="12dp"
+            android:text="You need to be at least 16 years old to use the Website. This information will be used for vetification and will be kept confidential"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Birth date"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="76dp"
+            android:background="@drawable/custom_input2"
+            android:onClick="NextActivity7"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FBF8F8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.358"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
